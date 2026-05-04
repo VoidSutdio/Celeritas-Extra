@@ -1,3 +1,4 @@
+#PARSE_ESCAPES
 # Celeritas Extra - Российская Локолизация 🪆
 # Based on Rubidium Extra translations
 
@@ -112,9 +113,9 @@ celeritasextra.option.extra.overlay_corner.tooltip=Выберите угол э�
 celeritasextra.option.extra.text_contrast=Контраст текста
 celeritasextra.option.extra.text_contrast.tooltip=Контролирует способ отображения текста оверлея для лучшей читаемости.
 celeritasextra.option.extra.vertical_sync=Вертикальная синхронизация
-celeritasextra.option.extra.vertical_sync.tooltip=Управляет режимом вертикальной синхронизации. Выкл: VSync отключён, возможны разрывы изображения. Вкл: Стандартная VSync, ограничивает FPS частотой обновления. Адаптивная: Включает VSync выше частоты обновления, отключает ниже для уменьшения подёргиваний. Доступна только при поддержке драйвера GPU.
+celeritasextra.option.extra.vertical_sync.tooltip=Управляет режимом вертикальной синхронизации.\nВыкл: VSync отключён, возможны разрывы изображения.\nВкл: Стандартная VSync, ограничивает FPS частотой обновления.\nАдаптивная: Включает VSync выше частоты обновления, отключает ниже для уменьшения подёргиваний. Доступна только при поддержке драйвера GPU.
 celeritasextra.option.screen_mode=Режим экрана
-celeritasextra.option.screen_mode.tooltip=Оконный: Стандартный оконный режим. Безрамочный: Полноэкранный без монопольного режима, удобное переключение Alt+Tab и мультимонитор. Полноэкранный: Монопольный полноэкранный режим.
+celeritasextra.option.screen_mode.tooltip=Оконный: Стандартный оконный режим.\nБезрамочный: Полноэкранный без монопольного режима, удобное переключение Alt+Tab и мультимонитор.\nПолноэкранный: Монопольный полноэкранный режим.
 celeritasextra.option.screen_mode.windowed=Оконный
 celeritasextra.option.screen_mode.borderless=Безрамочный
 celeritasextra.option.screen_mode.fullscreen=Полноэкранный
@@ -151,3 +152,6 @@ celeritasextra.overlay.fps_extended=(Сред: %s, 1%% Low: %s, 0.1%% Low: %s)
 celeritasextra.overlay.coordinates=X: %s, Y: %s, Z: %s
 celeritasextra.overlay.light_updates=Обновление освещения отключено
 celeritasextra.overlay.hei_hidden=Введите для поиска...
+
+# Values
+celeritasextra.value.chunks=%s чанк(а, ов)

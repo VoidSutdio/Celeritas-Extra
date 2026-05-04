@@ -242,7 +242,7 @@ public class CeleritasExtraGameOptionPages {
                         (opts, v) -> opts.renderSettings.fogStart = v,
                         opts -> opts.renderSettings.fogStart))
                 .add(sliderOption("celeritasextra.option.render.fog_distance",
-                        0, 32, 1, ControlValueFormatter.quantityOrDisabled("chunks", "Default"),
+                        0, 32, 1, value -> TextComponent.translatable(value == 0 ? "generator.default" : "celeritasextra.value.chunks", value),
                         (opts, v) -> opts.renderSettings.fogDistance = v,
                         opts -> opts.renderSettings.fogDistance))
                 .add(OptionImpl.createBuilder(CeleritasExtraGameOptions.FogType.class, celeritasExtraOpts)
@@ -267,7 +267,7 @@ public class CeleritasExtraGameOptionPages {
                         (opts, v) -> opts.renderSettings.cloudHeight = v,
                         opts -> opts.renderSettings.cloudHeight))
                 .add(sliderOption("celeritasextra.option.render.cloud_distance",
-                        0, 64, 1, ControlValueFormatter.quantityOrDisabled("chunks", "Default"),
+                        0, 64, 1, value -> TextComponent.translatable(value == 0 ? "generator.default" : "celeritasextra.value.chunks", value),
                         (opts, v) -> opts.renderSettings.cloudDistance = v,
                         opts -> opts.renderSettings.cloudDistance))
                 .add(sliderOption("celeritasextra.option.render.cloud_scale",
