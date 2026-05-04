@@ -37,7 +37,7 @@ base {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(25)
+        languageVersion = JavaLanguageVersion.of(21)
     }
     if (propertyBool('generate_sources_jar')) {
         withSourcesJar()
@@ -69,7 +69,7 @@ unimined.minecraft {
         if (propertyBool('use_access_transformer')) {
             accessTransformer "${rootProject.projectDir}/src/main/resources/${propertyString('access_transformer_locations')}"
         }
-        loader "0.5.7-alpha"
+        loader "0.3.35-alpha"
         runs.auth.username = minecraft_username
         runs.all {
             systemProperty("crl.dev.mixin", "${mod_id}.default.mixin.json,${mod_id}.mod.mixin.json")
@@ -179,7 +179,7 @@ if (!propertyBool('enable_shadow')) {
 }
 
 compileJava {
-    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_25
+    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {
@@ -231,13 +231,13 @@ tasks.named(remapTaskName).configure {
 }
 
 compileTestJava {
-    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_25
+    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_21
 }
 
 test {
     useJUnitPlatform()
     javaLauncher.set(javaToolchains.launcherFor {
-        languageVersion = JavaLanguageVersion.of(25)
+        languageVersion = JavaLanguageVersion.of(21)
     })
     if (propertyBool('show_testing_output')) {
         testLogging {

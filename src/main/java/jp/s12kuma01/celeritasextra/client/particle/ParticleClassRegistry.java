@@ -141,7 +141,7 @@ public class ParticleClassRegistry {
                         break;
                     }
                 }
-            } catch (Throwable _) {
+            } catch (Throwable ignored) {
             }
         }
     }
