@@ -1,6 +1,8 @@
 package jp.s12kuma01.celeritasextra.client.gui;
 
 import jp.s12kuma01.celeritasextra.client.CeleritasExtraClientMod;
+import net.minecraftforge.common.ForgeEarlyConfig;
+import net.minecraftforge.common.config.ConfigManager;
 import org.taumc.celeritas.api.options.structure.OptionStorage;
 
 /**
@@ -17,5 +19,6 @@ public class CeleritasExtraOptionsStorage implements OptionStorage<CeleritasExtr
     @Override
     public void save() {
         CeleritasExtraClientMod.options().writeChanges();
+        ConfigManager.sync(ForgeEarlyConfig.class);
     }
 }
